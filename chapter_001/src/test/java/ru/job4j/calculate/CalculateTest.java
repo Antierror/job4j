@@ -11,18 +11,18 @@ import static org.junit.Assert.assertThat;
  * @version $Id$
  * @since 0.1
  */
- public class CalculateTest {
- 
+public class CalculateTest {
+
 	/**
-	* Test echo.
-	*/
-	@Test	
+	 * Test echo.
+	 */
+	@Test
 	public void whenTakeNameThenTreeEchoPlusName() {
-	String input = "Kazakov Konstantin";
-	String expert = "Echo, echo, echo: Kazakov Konstantin";
-	
-	Calculate calc = new Calculate();
-	String result = calc.echo(input);
-	assertThat(result, is(expert)); 
+		String input = "Kazakov Konstantin";
+		String expert = "Echo, echo, echo: Kazakov Konstantin";
+
+		Calculate calc = new Calculate();
+		String result = calc.echo(input);
+		assertThat(result, is(expert));
 	}
 }
