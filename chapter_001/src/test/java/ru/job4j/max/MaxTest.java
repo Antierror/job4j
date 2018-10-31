@@ -12,4 +12,10 @@ public class MaxTest {
         int result = maxim.max(2, 10);
         assertThat(result, is(10));
     }
+    @Test
+    public void whenFirstLessSecondLessThird() {
+        Max maximus = new Max();
+        int result = maximus.max(4, 10, 20);
+        assertThat(result, is(20));
+    }
 }
