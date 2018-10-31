@@ -16,8 +16,7 @@ public class Point {
     }
 
     public double distanceTo(Point that) {
-        double result = Math.sqrt(Math.pow(this.x - that.x, 2) + Math.pow(this.y - that.y, 2));
-        return result;
+        return Math.sqrt(Math.pow(this.x - that.x, 2) + Math.pow(this.y - that.y, 2));
     }
 
     public static void main(String[] args) {

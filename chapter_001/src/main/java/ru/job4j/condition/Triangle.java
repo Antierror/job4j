@@ -45,6 +45,7 @@ public class Triangle {
         double p = this.period(ab, ac, bc);
         if (this.exist(ab, ac, bc)) {
             rsl = Math.sqrt(p * (p - ab) * (p - ac) * (p - bc));
+
         }
         return rsl;
     }
@@ -58,9 +59,13 @@ public class Triangle {
      * @return
      */
     private boolean exist(double ab, double ac, double bc) {
-        if (ab != ac || ac != bc || bc != ab) {
-            return true;
+        // Если большая сторона больше суммы двух других сторон,
+        // то треугольник построить нельзя.
+        if (ab >= (ac + bc)
+                || ac >= (ab + bc)
+                || bc >= (ab + ac)) {
+            return false;
         }
-        return false;
+        return true;
     }
 }
