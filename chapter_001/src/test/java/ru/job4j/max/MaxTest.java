@@ -15,7 +15,7 @@ public class MaxTest {
     @Test
     public void whenFirstLessSecondLessThird() {
         Max maximus = new Max();
-        int result = maximus.max(4, 10, 20);
-        assertThat(result, is(20));
+        int result = maximus.max(5, 25, 17);
+        assertThat(result, is(25));
     }
 }
