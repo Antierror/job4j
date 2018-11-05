@@ -8,6 +8,12 @@ package ru.job4j.loop;
 public class Paint {
     /**
      * Метод для построения пирамиды в псевдографике.
+     *
+     *    ^
+     *   ^^^
+     *  ^^^^^
+     * ^^^^^^^
+     *
      * @param h Высота пирамиды
      * @return Рисунок пирамиды.
      */
@@ -62,7 +68,7 @@ public class Paint {
      *  ^^^
      * ^^^^
      *
-     * @param height Высота высота треугольника
+     * @param height Высота треугольника
      * @return Рисунок левого трегольника.
      */
     public String leftTrl(int height) {
