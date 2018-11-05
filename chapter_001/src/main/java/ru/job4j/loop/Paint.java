@@ -81,7 +81,7 @@ public class Paint {
         return this.loopBy(
                 height,
                 height,
-                (row, column) -> row >= height - column -1
+                (row, column) -> row >= height - column - 1
         );
     }
 }
