@@ -14,4 +14,13 @@ public class FindLoopTest {
         int expect = 5;
         assertThat(result, is(expect));
     }
+    @Test
+    public void whenArrayHasLengh0ThenMinus1() {
+        FindLoop find = new FindLoop();
+        int[] input = new int[] {10, 33, 56, 12, 7, 65, 78, 14};
+        int value = 50;
+        int result = find.indexOf(input, value);
+        int expect = -1;
+        assertThat(result, is(expect));
+    }
 }
