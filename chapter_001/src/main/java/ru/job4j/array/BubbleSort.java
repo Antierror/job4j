@@ -6,6 +6,11 @@ package ru.job4j.array;
  * @since 0.1
  */
 public class BubbleSort {
+    /**
+     * Пузырьковый метод по сортировке массива.
+     * @param array Входящий массив
+     * @return Возвращение отсортированный массив.
+     */
     public int[] sort(int[] array) {
         for (int out = array.length - 1; out >= 1; out--) {
             for (int i = 0; i < out; i++) {
