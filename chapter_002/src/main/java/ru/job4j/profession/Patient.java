@@ -5,10 +5,10 @@ package ru.job4j.profession;
  * @version $Id$
  * @since 0.1
  */
-public class Pacient {
+public class Patient {
     private String name;
 
-    public Pacient (String name) {
+    public Patient(String name) {
         this.name = name;
     }
 }

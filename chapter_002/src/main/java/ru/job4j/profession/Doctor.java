@@ -12,7 +12,7 @@ public class Doctor extends Profession {
         super(name, profession);
     }
 
-    public void treat(Pacient pacient) {
+    public void treat(Patient patient) {
     }
 
 }
