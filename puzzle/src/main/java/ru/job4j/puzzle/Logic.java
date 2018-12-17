@@ -4,7 +4,9 @@ import ru.job4j.puzzle.firuges.Cell;
 import ru.job4j.puzzle.firuges.Figure;
 
 /**
- * @author Konstantin Kazakov (plan.05.87@gmail.com)
+ * //TODO add comments.
+ *
+ * @author Kazakov Konstantin (plan.05.87@gmail.com)
  * @version $Id$
  * @since 0.1
  */
@@ -35,7 +37,7 @@ public class Logic {
         return rst;
     }
 
-    public boolean isFree(Cell... cells) {
+    public boolean isFree(Cell ... cells) {
         boolean result = cells.length > 0;
         for (Cell cell : cells) {
             if (this.findBy(cell) != -1) {
