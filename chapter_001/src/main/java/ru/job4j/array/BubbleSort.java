@@ -31,9 +31,9 @@ public class BubbleSort {
      * @param array Входящий массив
      * @return Возврат проверки отсортированного массива.
      */
-    public boolean checkSort (int[] array) {
+    public boolean checkSort(int[] array) {
         boolean result = true;
-        for (int i = 1; i < array.length - 1; i++)
+        for (int i = 1; i < array.length - 1; i++) {
             /*
             Если первый элемент больше следушего, то результат будет отрицательный.
              */
@@ -41,6 +41,7 @@ public class BubbleSort {
                 result = false;
                 break;
             }
+        }
         return result;
     }
     /**
@@ -52,14 +53,15 @@ public class BubbleSort {
      */
     public int[] sortMerge(int[] array1, int[] array2) {
         int[] array3 = new int[array1.length + array2.length];
-        for (int i = 0, j = 0, k = 0; k < array3.length;) {
-            while (i < array1.length && j < array2.length) {
-                array3[k++] = array1[i] <= array2[j] ? array1[i++] : array2[j++];
-            }
-            while (i < array1.length)
-                array3[k++] = array1[i++];
-            while (j < array2.length)
-                array3[k++] = array2[j++];
+        int i = 0, j = 0, k = 0;
+        while (k < array3.length && i < array1.length && j < array2.length) {
+            array3[k++] = array1[i] <= array2[j] ? array1[i++] : array2[j++];
+        }
+        while (i < array1.length) {
+            array3[k++] = array1[i++];
+        }
+        while (j < array2.length) {
+            array3[k++] = array2[j++];
         }
         return array3;
     }
