@@ -54,7 +54,7 @@ public class BubbleSort {
     public int[] sortMerge(int[] array1, int[] array2) {
         int[] array3 = new int[array1.length + array2.length];
         int i = 0, j = 0, k = 0;
-        while (k < array3.length && i < array1.length && j < array2.length) {
+        while (i < array1.length && j < array2.length) {
             array3[k++] = array1[i] <= array2[j] ? array1[i++] : array2[j++];
         }
         while (i < array1.length) {
