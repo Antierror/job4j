@@ -1,7 +1,5 @@
 package ru.job4j.profession;
 
-import java.sql.SQLOutput;
-
 /**
  * @author Konstantin Kazakov (plan.05.87@gmail.com).
  * @version $Id$

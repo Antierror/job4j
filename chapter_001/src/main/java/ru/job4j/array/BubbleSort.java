@@ -1,6 +1,5 @@
 package ru.job4j.array;
 
-import static java.lang.System.arraycopy;
 
 /**
  * @author Konstantin Kazakov (Email: plan.05.87@gmail.com)
