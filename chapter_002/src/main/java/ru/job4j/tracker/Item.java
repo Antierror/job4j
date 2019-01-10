@@ -23,7 +23,7 @@ public class Item {
         return this.name;
     }
 
-    public void  setName() {
+    public void  setName(String name) {
         this.name = name;
     }
 
@@ -31,7 +31,7 @@ public class Item {
         return this.description;
     }
 
-    public void  setDescription() {
+    public void  setDescription(String description) {
         this.description = description;
     }
 
@@ -39,7 +39,7 @@ public class Item {
         return this.create;
     }
 
-    public void  setCreate() {
+    public void  setCreate(long create) {
         this.create = create;
     }
 
