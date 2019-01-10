@@ -13,11 +13,12 @@ public class Item {
     private String[] comments;
 
 
-    public Item(String name, String description, long create) {
+    public Item(String name, String description) {
         this.name = name;
         this.description = description;
-        this.create = create;
+        this.create = System.currentTimeMillis();
     }
+
 
     public String getName() {
         return this.name;
