@@ -24,9 +24,10 @@ public class Tracker {
     }
     /**
      * Метод генерирует уникальный ключ для заявки.
+     *
      * @return Уникальный ключ.
      */
-    public String generateId() {
+    private String generateId() {
         //Реализовать метод генерации.
         return String.valueOf(System.currentTimeMillis() + RN.nextInt() * 100);
     }
@@ -51,6 +52,11 @@ public class Tracker {
         return result;
     }
 
+    /**
+     * Метод удаления ячейки.
+     *
+     * @return
+     */
     public boolean delete(String id) {
         boolean result = false;
         for (int index = 0; index < this.position; index++) {
