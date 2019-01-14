@@ -105,5 +105,4 @@ public class TrackerTest {
         tracker.add(item2);
         assertThat(tracker.findById(item1.getId()), is(item1));
     }
-
 }

@@ -93,7 +93,8 @@ public class Tracker {
                 result[count++] = this.items[index];
             }
         }
-        return Arrays.copyOf(result, this.position);
+
+        return Arrays.copyOf(result, count);
     }
 
     /**
