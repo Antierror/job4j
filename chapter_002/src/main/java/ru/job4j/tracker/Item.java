@@ -40,10 +40,6 @@ public class Item {
         return this.create;
     }
 
-    public void  setCreate(long create) {
-        this.create = create;
-    }
-
     public String getId() {
         return this.id;
     }

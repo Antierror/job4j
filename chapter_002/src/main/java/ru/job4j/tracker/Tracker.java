@@ -29,7 +29,7 @@ public class Tracker {
      */
     private String generateId() {
         //Реализовать метод генерации.
-        return String.valueOf(System.currentTimeMillis() + RN.nextInt() * 100);
+        return String.valueOf(RN.nextInt(100));
     }
 
     /**
@@ -71,7 +71,7 @@ public class Tracker {
     }
 
     /**
-     * Метод показывающий заполненые ячейки.
+     * Метод показывающий заполненные ячейки.
      *
      * @return
      */

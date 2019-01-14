@@ -74,15 +74,23 @@ public class StartUI {
         String name = this.input.ask("Введите новое имя заявки: ");
         String desc = this.input.ask("Введите описание заявки: ");
         Item item = new Item(name, desc);
-        this.tracker.replace(id, item);
-        System.out.println("-------------Заявка была отредактирована----------");
+        if (this.tracker.replace(id, item)) {
+            System.out.println("---------- Заявка была отредактирована ----------");
+        } else {
+            System.out.println("----------------- Нет такого Id -----------------");
+            System.out.println("--------- Заявка была не отредактирована --------");
+        }
     }
 
     private void delete() {
-        System.out.println("------------ Удаление заявки по Id --------------");
+        System.out.println("--------- Удаление заявки по Id ----------");
         String id = this.input.ask("Введите Id для удаления: ");
-        this.tracker.delete(id);
-        System.out.println("-------------Заявка была удалена----------");
+        if (this.tracker.delete(id)) {
+            System.out.println("-------------- Заявка удалена ------------");
+        } else {
+            System.out.println("--------------- Нет такого Id ------------");
+            System.out.println("------------- Заявка не удалена ----------");
+        }
     }
 
     private void findID() {
