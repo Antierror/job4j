@@ -39,7 +39,7 @@ public class PaintTest {
                 )
         );
     }
-        @Test
+    @Test
     public void whenDrawTriangle() {
         new Paint().draw(new Triangle());
         assertThat(
