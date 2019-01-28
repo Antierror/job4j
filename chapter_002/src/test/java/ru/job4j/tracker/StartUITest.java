@@ -13,11 +13,11 @@ public class StartUITest {
 
     @Before
     public void loadOutput() {
-        tracker.add(new Item("test name", "desc")); //Item
-        tracker.add(new Item("test1 name", "desc1"));//Item2
-        tracker.add(new Item("test2 name", "desc2"));//Item3
-        tracker.add(new Item("test3 name", "desc3"));//Item4
-        tracker.add(new Item("test4 name", "desc4"));//Item5
+        tracker.add(new Item("test name", "desc"));
+        tracker.add(new Item("test1 name", "desc1"));
+        tracker.add(new Item("test2 name", "desc2"));
+        tracker.add(new Item("test3 name", "desc3"));
+        tracker.add(new Item("test4 name", "desc4"));
     }
 
     @After
