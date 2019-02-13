@@ -1,5 +1,7 @@
 package ru.job4j.tracker;
 
+import java.util.List;
+
 /**
  * @author Konstantin Kazakov (plan.05.87@gmail.com).
  * @version $Id$
@@ -8,4 +10,6 @@ package ru.job4j.tracker;
 public interface Input {
 
     String ask(String question);
+
+    int ask(String question, List<Integer> range);
 }

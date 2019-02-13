@@ -27,7 +27,7 @@ public class StartUITest {
 
     @Test
     public void whenShowAllItemm() {
-        Input input = new StubInput(new String[]{"1","6"});
+        Input input = new StubInput(new String[]{"1", "6"});
         new StartUI(input, tracker);
         assertThat(tracker.findAll()[0].getName(), is("test name"));
         assertThat(tracker.findAll()[1].getName(), is("test1 name"));

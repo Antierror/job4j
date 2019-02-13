@@ -25,9 +25,9 @@ public class MenuTracker {
      *
      * @return длину массива
      */
-//    public int getActionsLentgh() {
-//        return this.actions.size();
-//    }
+    public int getActionsLentgh() {
+        return this.actions.size();
+    }
 
     public void fillActions() {
         this.actions.add(new AddItem(0, "Add program"));
@@ -44,7 +44,7 @@ public class MenuTracker {
 
     public void show() {
         for (UserAction action : this.actions) {
-            if (action != null){
+            if (action != null) {
                 System.out.println(action.info());
             }
         }
@@ -54,7 +54,7 @@ public class MenuTracker {
         private int key;
         private String action;
 
-        public AddItem (int key, String action) {
+        public AddItem(int key, String action) {
             this.key = key;
             this.action = action;
         }
@@ -86,7 +86,7 @@ public class MenuTracker {
         private int key;
         private String action;
 
-        public ShowItems (int key, String action) {
+        public ShowItems(int key, String action) {
             this.key = key;
             this.action = action;
         }
@@ -116,7 +116,7 @@ public class MenuTracker {
         private int key;
         private String action;
 
-        public UpdateItem (int key, String action) {
+        public UpdateItem(int key, String action) {
             this.key = key;
             this.action = action;
         }

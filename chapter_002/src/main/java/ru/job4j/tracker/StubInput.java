@@ -1,5 +1,7 @@
 package ru.job4j.tracker;
 
+import java.util.List;
+
 /**
  * @author Konstantin Kazakov (plan.05.87@gmail.com).
  * @version $Id$
@@ -22,6 +24,12 @@ public class StubInput implements Input {
     @Override
     public String ask(String question) {
         return this.answer[this.position++];
+    }
+
+    @Override
+    public int ask(String question, List<Integer> range) {
+        //throw  new UnsupportedOperationException("Unsupported operation");
+        return -1;
     }
 }
 
