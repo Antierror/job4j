@@ -28,8 +28,19 @@ public class StubInput implements Input {
 
     @Override
     public int ask(String question, List<Integer> range) {
-        //throw  new UnsupportedOperationException("Unsupported operation");
-        return -1;
+        int key = Integer.valueOf(this.ask(question));
+        boolean exit = false;
+        for (int value : range) {
+            if (value == key) {
+                exit = true;
+                break;
+            }
+        }
+        if (exit) {
+            return key;
+        } else {
+            throw new UnsupportedOperationException("Unsupported operation");
+        }
     }
 }
 
