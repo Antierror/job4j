@@ -39,7 +39,7 @@ public class StubInput implements Input {
         if (exit) {
             return key;
         } else {
-            throw new UnsupportedOperationException("Unsupported operation");
+            throw new MenuOutException("Пожалуйста, введите число из меню.");
         }
     }
 }
